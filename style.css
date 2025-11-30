@@ -1,0 +1,123 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    margin: 0;
+    background-color: #f8f8f8;
+}
+
+h1, h2 {
+    font-family: 'Playfair Display', serif;
+}
+
+/* --- HEADER/NAV --- */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 5%;
+    background-color: white;
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.05);
+}
+.logo { font-size: 24px; font-weight: 700; }
+nav a { margin: 0 15px; text-decoration: none; color: #333; transition: color 0.3s; }
+nav a:hover { color: #8a2be2; /* Warna Aksen Premium */ }
+.btn-login { border: 1px solid #333; padding: 5px 15px; border-radius: 4px; }
+.btn-login:hover { background-color: #333; color: white; }
+
+/* --- HERO SECTION --- */
+.hero-section {
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 100px 20px;
+    margin-bottom: 50px;
+}
+.hero-section h1 { font-size: 4em; margin-bottom: 15px; color: #1a1a1a; }
+.hero-section p { font-size: 1.2em; margin-bottom: 30px; }
+
+/* --- BUTTONS --- */
+.btn-primary { 
+    background-color: #8a2be2; /* Warna Aksen Premium */
+    color: white; 
+    padding: 12px 30px; 
+    text-decoration: none; 
+    border-radius: 5px; 
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+.btn-primary:hover { background-color: #6a1ba0; }
+.btn-secondary { /* Untuk tombol di Product Card */
+    background-color: white;
+    border: 1px solid #8a2be2;
+    color: #8a2be2;
+    padding: 8px 15px;
+    text-decoration: none;
+    border-radius: 4px;
+    display: inline-block;
+}
+
+/* --- PRODUCT GRID --- */
+.product-grid { text-align: center; padding: 20px 5%; }
+.products-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+.product-card {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+.product-card:hover { transform: translateY(-5px); }
+.product-image { height: 200px; background-color: #e0e0e0; margin-bottom: 15px; line-height: 200px; }
+.price { color: #8a2be2; font-weight: 600; margin: 10px 0; }
+
+/* --- AUTH PAGE STYLING (Login/Reset) --- */
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f1f1f1;
+}
+.login-box, .reset-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+    transition: all 0.5s ease;
+}
+.input-group { text-align: left; margin-bottom: 20px; }
+.input-group label { display: block; margin-bottom: 5px; font-weight: 600; }
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+}
+.input-group input:focus { border-color: #8a2be2; outline: none; }
+.auth-button {
+    background-color: #8a2be2;
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 5px;
+    width: 100%;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 10px;
+}
+.auth-button.success-button { background-color: #28a745; }
+.divider { margin: 20px 0; color: #aaa; }
+.forgot-password-link, .signup-link a { color: #8a2be2; text-decoration: none; font-weight: 600; }
+.hidden { display: none !important; }
